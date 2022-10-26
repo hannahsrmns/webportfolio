@@ -7,7 +7,6 @@
     <title>SAROMINES</title>
 
     <!-- BOOTSTRAP -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <!-- CSS  -->
@@ -27,29 +26,29 @@
 
   </head>
   <body>
-    <div class="animated-background"></div>
 
-
-    <!-- NAVIGATION BAR -->
+  
+    <!-- START OF NAVIGATION BAR -->
 
     <header class="d-flex navbar fixed-top mr-3" id="header">
-        <!-- logo -->
-        <a href="#home" class="navbar-brand"><img src="./images/logo2.png" alt="logo" class="img-fluid ml-3"></a>
+      <!-- logo -->
+      <a href="#home" class="navbar-brand"><img src="./images/logo3.png" alt="logo" class="img-fluid ml-4 mt-3"></a>
    
         <!-- menu bar -->
         <div class="nav-menu text-uppercase float-right" id="navbarNav">
           <nav id="navbar" class="navbar-expand-lg justify-content-around menu">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
+
             <ul class="navbar-nav list-unstyled d-flex align-items-start">
               <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#home">Home</a></li>
               <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#about">About</a></li>
-              <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#services">Services</a></li>   
+              <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#services">Services</a></li>
               <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#portfolio">Portfolio</a></li>
               <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
 
-          <!-- night mode button -->
+            <!-- night mode button -->
               <li><input class="night_mode" type="checkbox" id="darkmode-toggle"/><label for="darkmode-toggle" id="dark-change">
                   <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
@@ -92,78 +91,191 @@
           </nav>
         </div>
      
-          <!-- menu bar for mobile version -->
-          <div id="hamburger-icon"class="nav-menu text-uppercase float-right" id="navbarNav" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-              <ul class="mobile-menu list-unstyled navbar-nav">
-                <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#home">Home</a></li>
-                <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#about">About</a></li>
-                <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#portfolio">Portfolio</a></li>
-                <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+            <!-- menu bar for mobile version -->
+            <div id="hamburger-icon"class="nav-menu text-uppercase float-right" id="navbarNav" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+                <ul class="mobile-menu list-unstyled navbar-nav">
+                  <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#home">Home</a></li>
+                  <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#about">About</a></li>
+                  <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#services">Services</a></li>
+                  <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#portfolio">Portfolio</a></li>
+                  <li class="p-3 nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
+  
 
-    <!--HOME SECTION  -->
-      <section id="home" class="home">
-        <div class="glass p-3  d-flex align-items-left">
-          <div class="container-fluid row min-vh-100">
-           <div class=" col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center text-center mt-3">
-               <h1 class="w3-animate-right fs- lh-1">Hey there, I'm <span class="violet">Hannah.</span></a></h1>
-               <h4 class="w3-animate-right1" >Freelance <span class="w3-animate-right1">Graphic Designer</span> and <span>Future Web Developer</span></h4>
-                  <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="#contact" class="col-4 btn-get-connected ">Get Connected</a>
-                    <a href="#contact" type="button" class="col-4 btn-see ">See more</a>
+    <!-- START OF HOME SECTION-->
+  
+       <section id="home" class="home">
+        <div class="bg">
+          <div class="container-fluid d-flex">
+            <div class="row mb-5 mt-3">
+
+              <!-- first column - right side -->
+              <div class="d-flex flex-column order-2 col-lg-6 order-lg-2 justify-content-center mt-5 ml-3">
+                <h3 class="font-weight-bold">Hey there, I'm </h3>
+                <h1 data-text="HANNAH.">HANNAH.</h1>
+                <h5>Freelance Graphic Designer</span> and <span>Future Web Developer</span></h5>
+                  <!-- button -->
+                  <div class="row justify-content-center ">
+                    <div class="text-center font-weight-bold btn-get-connected p-3 mt-4 glass"><a href="#contact" class="btn-get-connected p-3">Get Connected</a>
+                    </div>
                   </div>
               </div>
-              <div class="col-lg-5 order-1 ml-3 mt-5 order-lg-1 p-6 ">
-                <img id="pic" src="./images/pic1.png" class="img-fluid" alt="photo" >
-             </div>
-           </div>
+
+                <!-- second column - left side -->
+                <div class="order-1 col-lg-5 mt-5 mr-3 ml-3">
+                  <img id="pic" src="./images/pic5.png" class="img-fluid" alt="photo" >
+              </div>
+            </div>  
+          </div>
+          </div>
         </section>
-      <!-- END OF HOME SECTION-->
+       <!-- END OF HOME SECTION -->
 
+      <!-- START OF MESSAGE  SECTION-->
+    
+         <section class="message text-center text-light">
+            <div class="container p-3 min-vh-100">
+              <div class="row">
 
-      <!-- ABOUT ME SECTION -->
+                <!-- first column-->
+                <div class=" flex-column order-2  order-lg-1   justify-content-center">
+                  <h3 class="p-3 mt-5"></h3>
+                  <h2 class="font-weight-bold p-3 pink">What's next? </h2>
+                  <h1 class="text-uppercase font-weight-bold p-3">Let's bring your <span class="pink">vision </span>to life!</h1>
+                  <h4 class="ml-3 mr-3">I love designing with a purpose.</h4>
 
-    <section id="about" class="about">
-      <div class=" d-flex align-items-left">
-        <div class="container-fluid row min-vh-100">
-         <div class="col-lg-6  order-2 order-lg-1 d-flex flex-column justify-content-center text-center mb-3">
-             <h1 class="font-weight-bold text-uppercase justify-content-lg-start container-flex offset-2">About me</a></h1>
-             <h4 class="font-weight-bold offset-2">Hey there again! I am <span class="violet">Hannah.</span></h4>
-            <p id="desc" class="paragraph text-align--justified offset-2">
-              I am an aspiring web developer who enjoys solving problems and analyzing things.
-              I love the logic and structure of coding and always strive to write efficient codes. 
-              I wanted to design a website using different programming languages which is why I joined a bootcamp. </p>
-               <p id="desc" class="text-align-justified offset-2 paragraph">
-                When I'm not coding or editing, you'll find me in front my computer (again)  playing video games or playing with my cats and dogs.</p>
-            
-                <div class="d-flex justify-content-center justify-content-lg-start">
+                  <p class="p-3 mr-5 ml-5" id="message">I am eager to integrate my creative and innovative designs and concepts into your personal or professional projects. I have been working with computers and technology for most of my life being the local tech support for my friends and family. In addition, I enjoy learning new skills and implementing them in real life! I constantly experiment without limits or restrictions with both. My work has always been, and always will be, a statement.
+                  </p>
+              
+                  <!-- button -->
+                  <div class="row justify-content-center ">
+                    <div class="text-center p-3 font-weight-bold mb-4">
+                      <a href="#portfolio" id="btn-learn-more" class="p-3 green">See Services </a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="offset-2 col-lg-5 order-1 ml-3 mt-5 order-lg-2 p-6 ">
-              <img id="pic" src="./images/pic3.png" class="img-fluid" alt="photo" >
-           </div>
-         </div>
-      </section>
 
-      <!-- END OF ABOUT ME SECTION -->
-
-      <!-- START OF SERVICES SECTION -->
-          <section id="services" class="services">
-      <div class=" glass  d-flex align-items-left">
-        <div class="container-fluid row min-vh-100">
-         <div class="col-lg-12  order-2 order-lg-1 d-flex flex-column justify-content-center text-center mb-3">
-            <h1 class="font-weight-bold">SERVICES</h1>
-            <h1>work in progress..</h1>
+              </div>  
             </div>
-           </div>
-         </div>
-      </section>
-      <!-- END OF SERVICES SECTION -->
+          </section>
+         <!-- END OF MESSAGE SECTION -->
+
+       <!-- START OF ABOUT ME  SECTION-->
+    
+         <section id="about" class="about text-center">
+            <div class="container d-flex min-vh-100">
+              <div class="row">
+
+                <!-- first column - left side -->
+                <div class="d-flex flex-column col-lg-6 order-2 order-lg-1   justify-content-center text-left tex-light">
+                  <h2 class="font-weight-bold ml-4">About </h2>
+                  <h1 class="ml-4 text-uppercase font-weight-bold">Learn more about me</h1>
+
+                  <p id="description" class="mr-4 ml-4">I am an aspiring web developer who enjoys solving problems and analyzing things. I love the logic and structure of coding and always strive to write efficient codes. I wanted to design a website using different programming languages which is why I joined a bootcamp. </p>
+                
+                  <p id="description" class="mr-4 ml-4">When I'm not coding or editing, you'll find me in front my computer (again)  playing video games or playing with my cats and dogs. </p> 
+
+                  <!-- button -->
+                  <div class="row justify-content-center ">
+                    <div class="mt-3 text-center p-3 font-weight-bold mb-4">
+                      <a href="#portfolio" id="btn-learn-more" class="p-3 green">Learn More </a>
+                    </div>
+                  </div>
+                </div>
+
+                  <!-- second column - right side -->
+                  <div class="col-lg-6 mt-3 order-lg-2 mb-3">
+                    <img id="pic" src="./images/pic3.png" class="img-fluid" alt="photo" >
+                </div>
+              </div>  
+            </div>
+          </section>
+         <!-- END OF ABOUT ME SECTION -->
+
+          <!-- START OF SERVICES SECTION -->
+
+  <!--        <section id="services" class="services text-center">
+            <div class="container p-3 min-vh-100">
+              <div class="section-header">
+                <h2></h2>
+                <h4 class="mt-5"></h4>
+                <h1 class="font-weight-bold mt-4 mb-4 text-uppercase"> SERVICES</h1>
+                <h5 class="font-weight-bold">SOFTWARE TOOLS</h5>
+              </div>
+                <div class="row "> -->
+
+                     <!-- first column - left side -->
+         <!--          <div class="order-2 first-item item col-lg-6">   
+                      <span class="Sphere rounded-circle glass p-3"></span>
+                  </div> -->
+             
+                <!-- second column - middle side -->
+         <!--        <div class="col-lg-6 order-1 justify-content-center text-center">
+                  <div class="second-item item">
+                    <i class="fa fa-chrome fa-2x mb-3 p-3"></i>
+                    <h5 class="font-weight-bold p-3">Web Design</h5>
+  
+                </div>
+
+                  </div>
+                </div> -->
+
+   <!--                  </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </section> -->
+       <!-- END OF OF SERVICES SECTION -->
+
+         <!-- START OF TECH STACK SECTION -->
+
+         <section id="services" class="services text-center">
+            <div class="container p-3 min-vh-100">
+              <div class="section-header">
+                <h2></h2>
+                <h4 class="mt-5"></h4>
+                <h1 class="font-weight-bold mt-4 mb-4 text-uppercase"> TECH STACK</h1>
+                <h5 class="font-weight-bold">SOFTWARE TOOLS</h5>
+              </div>
+        <!--         <div class="row "> -->
+
+                     <!-- first column - left side -->
+                  <div class="order-2 first-item item">   
+                      <span class="Sphere rounded-circle glass p-3"></span>
+                  </div>
+             
+                <!-- second column - middle side -->
+   <!--              <div class="col-lg-6 order-1 justify-content-center text-center">
+                  <div class="second-item item">
+                    <i class="fa fa-chrome fa-2x mb-3 p-3"></i>
+                    <h5 class="font-weight-bold p-3">Web Design</h5>
+  
+                </div> -->
+
+                  </div>
+                </div>
+
+                <!-- third column - right side -->
+              <!--   <div class="col-lg-4 order-sm-1 order-1 justify-content-center text-center">
+                  <div class="third-item item">
+                    <i class="fa fa-wpforms fa-2x mb-3 p-3"></i>
+                    <h5 class="font-weight-bold p-3">Product Design</h5> -->
+
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </section>
+       <!-- END OF OF SERVICES SECTION -->
+
+
 
       <!-- PORTFOLIO SECTION -->
       <section id="portfolio" class="portfolio">
@@ -270,121 +382,178 @@
   
         <!-- END OF PORTFOLIO SECTION -->
 
+       <!-- START OF CONTACT FORM & SOCIAL-->
 
-       <!-- CONTACT FORM-->
-           <footer class="p-3 mt-5" id="footer">
-        <section id="contact" class="contact p-3 text-center">
-            <div class="container">
-                <div class="section-header">
-                  <h2 class="text-center font-weight-bold" id="id">Contact</h2>
-                  <h3>Let's work together!</h3>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="info-container d-flex flex-column align-items-center justify-content-center">
-                    
-                      <!-- gitlab -->
-                      <div class="info-item d-flex">
-                        <a href="https://gitlab.com/users/sign_in"><i class="fa fa-gitlab fa-2x"></i></a>   
-                          <div>
-                            <h4>Gitlab</h4>
-                            <p>@hannah_mae</p>
-                         </div>
-                      </div>
-
-                      <!--behance -->
-                      <div class="info-item d-flex">
-                        <a href="https://www.behance.net"><i class="fa fa-behance fa-2x"></i></a>
-                        <div>
-                          <h4>Behance</h4>
-                          <p>Hannah Saromines</p>
-                        </div>
-                      </div>
-
-                      <!--instagram -->
-                      <div class="info-item d-flex">
-                        <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
-                          <div>
-                            <h4>Instagram</h4>
-                            <p>@hannahsrmns</p>
-                          </div>
-                      </div>
-
-                      <!--linkedin -->
-                      <div class="info-item d-flex">
-                        <a href="https://www.instagram.com"><i class="fa fa-linkedin fa-2x"></i></a>
-                          <div>
-                            <h4>Linkedin</h4>
-                            <p>@hannahsaromines</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <!-- form -->
-              <div class="col-lg-8">
-                <form class="contact-form">
-                  <div class="row">
-                    <div class="col-md-6 form">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Name">
-                    </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="contact" class="form-control" name="contact_no" id="contact_no" placeholder="Contact No.">
-                    </div>
-                  </div>
-                      <div class="form-group mt-3 mt-md-0">   
-                              <select class="form-control" name="concern" id="concern" placeholder="Concern">
-                                  <option></option>
-                                  <option>Quotation</option>
-                                  <option>Inquiry</option>
-                                  <option>Issues</option>
-                              </select>
-                          </div>
-                  <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
-                  </div>
-
-                  <div class="text-center"><button type="submit">Send Message</button></div>
-                </form>
-              </div><
-
+       <section id="contact" class="contact text-center glass">
+          <div class="container">
+            <div class="section-header">
+                <h1 class="font-weight-bold mt-4 text-center">Let's work together!</h1>
             </div>
 
+            <div class="row">
+
+              <!-- first column - left side -->
+              <div class="col-lg-4 order-2 order-lg-1">
+                <div class="social-container d-flex flex-column align-items-center justify-content-center ">
+
+                  <!-- socials - gitlab -->
+                  <div class="social-link d-flex glass text-center offset-2">
+                    <a class="social-icon" target="_blank" href="https://gitlab.com/users/sign_in"><i class="fa fa-gitlab fa-2x"></i></a>   
+                      <div>
+                        <h4>Gitlab</h4>
+                        <p>@hannah_mae</p>
+                     </div>
+                  </div>
+
+                  <!--socials - behance -->
+                  <div class="social-link d-flex glass">
+                    <a class="social-icon" target="_blank" href="https://www.behance.net"><i class="fa fa-behance fa-2x"></i></a>
+                    <div>
+                      <h4>Behance</h4>
+                      <p>Hannah Saromines</p>
+                    </div>
+                  </div>
+
+                  <!--socials - instagram -->
+                  <div class="social-link d-flex glass">
+                    <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a>
+                      <div>
+                        <h4 class="text-center">Instagram</h4>
+                        <p>@hannahsrmns</p>
+                      </div>
+                  </div>
+
+                  <!--socials - linkedin -->
+                  <div class="social-link d-flex glass">
+                    <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-linkedin fa-2x"></i></a>
+                      <div>
+                        <h4>Linkedin</h4>
+                        <p>@hannahsaromines</p>
+                      </div>
+                  </div>
+                </div>
+              </div> 
+
+                <!-- CONTACT FORM -->
+
+                <!-- second column - right side -->
+                <div class="col-lg-8 order-1 order-lg-2 mt-2 mb-4">
+                  <form class="contact-form">
+                    <div class="row">
+
+                      <!-- name -->
+                      <div class="col-md-6 form">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+                      </div>
+
+                      <!-- contact no. -->
+                      <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="contact" class="form-control" name="contact_no" id="contact_no" placeholder="Contact No.">
+                      </div>
+                    </div>
+                      <!-- concern -->
+                      <div class="form-group mt-3 mt-md-0">
+                        <select class="form-control" name="concern" id="concern" placeholder="Concern">
+                          <option></option>
+                          <option>Quotation</option>
+                          <option>Inquiry</option>
+                          <option>Issues</option>
+                        </select>
+
+                        <!-- message -->
+                        <div class="form-group mt-3">
+                          <textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
+                        </div>
+
+                        <!-- send message button -->
+                        <div class="text-center">
+                          <button type="submit" data-toggle="modal" data-target=".modal">Send Message</button>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
           </div>
         </section>
-        <!-- END OF CONTACT FORM -->
 
-          <!-- FOOTER -->
-          <div class="footer_bg">
+            <!-- MODAL -->
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Thank you for contacting us!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">Message Successfully Sent</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- END OF MODAL -->
+
+
+
+
+
+
+
+        <!-- END OF CONTACT FORM & SOCIALS -->
+
+         <!-- START OF FOOTER FOOTER -->
+
+          <div class="footer_bg bg-dark min-vh-50">
             <p class="footer_text text-center font-weight: bold; p-2">
               Designed by: Hannah Saromines
             </p>
         </footer>
         </div>
-        <!-- END OF FOOTER-->
 
-          <!-- MODAL -->
-        <div class="modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Thank you for contacting us!</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="text-center">Message Successfully Sent</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END OF MODAL -->
 
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- BOOTSTRAP -->
  
@@ -415,6 +584,39 @@
         cursor.classList.add("expand");
       setTimeout(() => {
         cursor.classList.remove("expand");}, 500)})
+    </script>
+
+
+    <!-- FOR TECH STACH -->
+
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'FUSION360', 'ADOBE PHOTOSHOP', 'ADOBE LIGHTROOM',
+            'ADOBE ILLUSTRATOR', 'AUTOCAD', 'SKETCHUP', 'SOLIDWORKS' , 'HTML' , 'CSS' , 'JAVASCRIPT' , 'BOOTSTRAP' , 'GIT'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 180,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 125,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#816095 ';
+        document.querySelector('.Sphere').style.color = color;
     </script>
 
 
